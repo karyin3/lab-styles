@@ -1,14 +1,36 @@
 <resources>
 
     <!-- TODO: Add own styles here! -->
+    <style name="TextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?android:colorPrimaryDark</item>
+
+    </style>
+
+    <style name="Label" parent="@style/TextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="GoldBackground" parent="@style/Label">
+        <item name="android:background">@color/colorGold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="ButtonStyle" parent="@android:style/MediaButton">
+        <item name="android:textSize">22sp</item>
+    </style>
 
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/colorUW</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorGold</item>
     </style>
 
 </resources>
